@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen | Premium Web Development for Indian Businesses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #e5e7eb;
+        }
+
+        .silver-gradient {
+            background: linear-gradient(145deg, #ffffff 0%, #a3a3a3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .silver-border {
+            border: 1px solid rgba(192, 192, 192, 0.2);
+        }
+
+        .silver-border:hover {
+            border-color: rgba(192, 192, 192, 0.5);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 glass-card border-b border-white/5 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter silver-gradient">ZEN</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-zinc-400">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#pricing" class="hover:text-white transition">Pricing</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+        <a href="#contact" class="px-5 py-2 bg-white text-black text-xs font-bold uppercase rounded-full hover:bg-zinc-200 transition">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center px-6 text-center">
+        <h1 class="text-5xl md:text-8xl font-bold silver-gradient mb-6 leading-tight">
+            Digital Excellence <br> For Indian Visionaries.
+        </h1>
+        <p class="text-zinc-400 max-w-2xl text-lg md:text-xl font-light mb-10">
+            Zen crafts bespoke, high-performance web experiences that turn local businesses into global brands.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#contact" class="px-8 py-4 bg-white text-black font-semibold rounded-sm silver-border transition transform hover:-translate-y-1">View Services</a>
+            <a href="#about" class="px-8 py-4 border border-zinc-700 hover:bg-zinc-900 rounded-sm transition">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 silver-gradient">The Zen Standard.</h2>
+                <p class="text-zinc-400 leading-relaxed mb-6">
+                    I am Zen, a specialist web developer dedicated to building premium digital storefronts for growing businesses in India. I don't just build websites; I build revenue-generating assets.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mt-10">
+                    <div>
+                        <h3 class="text-4xl font-bold text-white">50+</h3>
+                        <p class="text-zinc-500 text-sm uppercase tracking-wider">Happy Clients</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-white">100%</h3>
+                        <p class="text-zinc-500 text-sm uppercase tracking-wider">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card p-1 silver-border rounded-xl aspect-square flex items-center justify-center">
+                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80" class="rounded-lg grayscale hover:grayscale-0 transition duration-700" alt="Workstation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-zinc-950/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12 silver-gradient">Investment</h2>
+            <div class="glass-card p-12 silver-border relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 bg-zinc-800 text-xs text-zinc-400 uppercase tracking-widest">Premium Tier</div>
+                <h3 class="text-zinc-400 mb-4">Standard Full-Stack Project</h3>
+                <div class="text-5xl font-bold text-white mb-6">₹25,000 <span class="text-xl font-light text-zinc-500">to</span> ₹50,000</div>
+                <ul class="text-zinc-400 space-y-3 mb-10 text-left max-w-xs mx-auto">
+                    <li><i class="fas fa-check text-zinc-500 mr-2"></i> Custom UI/UX Design</li>
+                    <li><i class="fas fa-check text-zinc-500 mr-2"></i> Mobile Responsive Build</li>
+                    <li><i class="fas fa-check text-zinc-500 mr-2"></i> SEO Optimization</li>
+                    <li><i class="fas fa-check text-zinc-500 mr-2"></i> Fast-load Performance</li>
+                </ul>
+                <a href="#contact" class="inline-block px-10 py-4 bg-white text-black font-bold uppercase text-sm rounded-sm hover:invert transition">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold silver-gradient mb-4">Start Your Project</h2>
+            <p id="contact-info-display" class="text-zinc-500"></p>
+        </div>
+        
+        <form id="booking-form" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" name="user_name" placeholder="Name" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition">
+                <input type="tel" name="user_phone" placeholder="Phone Number" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition">
+            </div>
+            <textarea name="project_details" rows="5" placeholder="Project Details" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition"></textarea>
+            <button type="submit" id="submit-btn" class="w-full py-4 bg-zinc-100 text-black font-bold uppercase tracking-widest hover:bg-white transition">Send Inquiry</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center text-zinc-600 text-sm">
+        <p>&copy; 2024 ZEN Digital India. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Call Action -->
+    <a id="floating-call" href="#" class="fixed bottom-8 left-8 w-14 h-14 bg-white text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-40">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Chatbot UI -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button id="chat-toggle" class="w-14 h-14 bg-zinc-800 silver-border text-white rounded-full flex items-center justify-center shadow-2xl">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+
+        <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 glass-card silver-border rounded-xl overflow-hidden flex flex-col shadow-2xl">
+            <div class="p-4 bg-zinc-900 border-b border-white/10 font-bold silver-gradient">Zen Assistant</div>
+            <div id="chat-history" class="p-4 h-64 overflow-y-auto text-sm space-y-4 flex flex-col">
+                <div class="bg-zinc-800 p-3 rounded-lg self-start max-w-[80%]">Hello! I'm Zen's AI. How can I help you today?</div>
+            </div>
+            <div class="p-3 border-t border-white/10 flex gap-2">
+                <input type="text" id="chat-input" placeholder="Ask about services..." class="bg-zinc-900 text-xs p-2 flex-1 outline-none">
+                <button id="chat-send" class="text-white px-2"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
