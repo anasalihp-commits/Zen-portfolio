@@ -112,21 +112,13 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold silver-gradient mb-4">Start Your Project</h2>
-            <p id="contact-info-display" class="text-zinc-500"></p>
-        </div>
-        
-        <form id="booking-form" class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-                <input type="text" name="user_name" placeholder="Name" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition">
-                <input type="tel" name="user_phone" placeholder="Phone Number" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition">
-            </div>
-            <textarea name="project_details" rows="5" placeholder="Project Details" required class="w-full bg-zinc-900 border border-zinc-800 p-4 rounded-sm focus:border-zinc-500 outline-none transition"></textarea>
-            <button type="submit" id="submit-btn" class="w-full py-4 bg-zinc-100 text-black font-bold uppercase tracking-widest hover:bg-white transition">Send Inquiry</button>
-        </form>
+    <form name="booking" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <button type="submit">Book Now</button>
+</form>
+
     </section>
 
     <!-- Footer -->
