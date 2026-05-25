@@ -1,6 +1,6 @@
 // config.js
 const CONFIG = {
-    EMAIL_SERVICE_ID: "YOUR_EMAILJS_SERVICE_ID", // From EmailJS
+    EMAIL_SERVICE_ID: "service_csoln9d", // From EmailJS
     EMAIL_TEMPLATE_ID: "YOUR_EMAILJS_TEMPLATE_ID", // From EmailJS
     PUBLIC_KEY: "YOUR_EMAILJS_PUBLIC_KEY", // From EmailJS
     
