@@ -5,8 +5,8 @@ const CONFIG = {
     PUBLIC_KEY: "YOUR_EMAILJS_PUBLIC_KEY", // From EmailJS
     
     // Contact Info
-    PHONE_NUMBER: "+91 98765 43210",
-    EMAIL_ADDRESS: "hello@zenwebsites.in",
+    PHONE_NUMBER: "+91 9015936580",
+    EMAIL_ADDRESS: "anasali@gmail.com",
     
     // Pricing
     PRICE_RANGE: "₹25,000 - ₹50,000"
